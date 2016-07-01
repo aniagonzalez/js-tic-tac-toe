@@ -80,6 +80,8 @@ TicTacToe.prototype = {
     } else if (winnerCombs.includes(-3)){
       console.log("Player 2 WINS!")
       return "Player 2"
+    } else if (this._turn > 8){
+      return "Nobody"
     } else {
       return false
     }
@@ -94,6 +96,7 @@ $(document).on('ready', function() {
   var game = new TicTacToe("p1", "p2")
 
   var buttons = $(".tic-tac-toe button")
+  var start = $(".start")
 
   buttons.on('click', function(event) {
     // console.log($(this))
@@ -112,13 +115,19 @@ $(document).on('ready', function() {
     if (!winner == false) {
       if (winner=="Player 1") {
         buttons.addClass("player1winner")
-      } else {
+      } else if (winner=="Player 2"){
         buttons.addClass("player2winner")
+      } else {
+        buttons.addClass("draw")
       }
-      window.alert(winner + "WINS!");
+      window.alert(winner + " WINS!");
     }
 
+  })
 
+  start.on('click', function(event) {
+    console.log("RESET GAME")
+    var game = new TicTacToe("p1", "p2")
   })
 
 })

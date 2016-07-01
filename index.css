@@ -1,4 +1,7 @@
 html {
+  background-image: url("http://susanlmeissner.com/wp-content/uploads/2014/12/the-walking-dead-poster.jpg");
+  /*background-position: left;*/
+  background-size: cover;
 }
 
 .spot {
@@ -9,6 +12,15 @@ html {
   margin: 0;
   padding: 0;
   border: 3px solid;
+  background-image: url("http://www.previewsworld.com/catalogimages/STK_IMAGES/STK620001-640000/STK634070.jpg");
+  background-size: cover;
+}
+
+.start {
+  margin: auto;
+  /*width: 6rem;*/
+  /*height: 2rem;*/
+  background-color: yellow;
 }
 
 table {
@@ -16,17 +28,28 @@ table {
 }
 
 .player1 {
-  background-color: cyan;
+  /*background-color: cyan;*/
+  background-image: url("http://vignette2.wikia.nocookie.net/walkingdead/images/0/08/606_Daryl_Leery.png/revision/latest?cb=20151109111143");
+  background-size: cover;
 }
 
 .player2 {
-  background-color: magenta;
+  /*background-color: magenta;*/
+  background-image: url("http://dailydead.com/wp-content/uploads/2014/04/Walking-Dead-S45-Zombie-020.jpg");
+  background-size: cover;
 }
 
 .player1winner {
-  background-color: cyan;
+  background-image: url("http://vignette2.wikia.nocookie.net/walkingdead/images/0/08/606_Daryl_Leery.png/revision/latest?cb=20151109111143");
+  background-size: cover;
 }
 
 .player2winner {
-  background-color: magenta;
+  background-image: url("http://dailydead.com/wp-content/uploads/2014/04/Walking-Dead-S45-Zombie-020.jpg");
+  background-size: cover;
+}
+
+.draw {
+  background-image: url("http://img5.uploadhouse.com/fileuploads/1423/1423155f2384b53d075577f0bcfde1a3fba8f60.png");
+  background-size: contain;
 }
