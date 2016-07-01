@@ -61,7 +61,29 @@ TicTacToe.prototype = {
   },
 
   checkWin: function() {
-    
+    // Creating the winner combinations
+    var winnerCombs = []
+
+    for (i = 0; i < 3; i++) {
+      winnerCombs.push(this._board[0][i] + this._board[1][i] + this._board[2][i])
+      winnerCombs.push(this._board[i][0] + this._board[i][1] + this._board[i][2])
+    }
+    winnerCombs.push(this._board[0][0] + this._board[1][1] + this._board[2][2])
+    winnerCombs.push(this._board[2][0] + this._board[1][1] + this._board[0][2])
+    console.log(winnerCombs)
+
+    // Checking if we have 3 or -3 on any of the winner combs
+
+    if(winnerCombs.includes(3)){
+      console.log("Player 1 WINS!")
+      return "Player 1"
+    } else if (winnerCombs.includes(-3)){
+      console.log("Player 2 WINS!")
+      return "Player 2"
+    } else {
+      return false
+    }
+
   }
 
 }
@@ -85,7 +107,17 @@ $(document).on('ready', function() {
     $(this).addClass(colorClass)
 
     //check if win?
-    game.checkWin
+    winner = game.checkWin() //returns "Player 1", "Player 2" or false
+
+    if (!winner == false) {
+      if (winner=="Player 1") {
+        buttons.addClass("player1winner")
+      } else {
+        buttons.addClass("player2winner")
+      }
+      window.alert(winner + "WINS!");
+    }
+
 
   })
 

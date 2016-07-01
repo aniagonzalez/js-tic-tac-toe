@@ -22,3 +22,11 @@ table {
 .player2 {
   background-color: magenta;
 }
+
+.player1winner {
+  background-color: cyan;
+}
+
+.player2winner {
+  background-color: magenta;
+}
