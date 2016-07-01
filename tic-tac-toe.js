@@ -127,7 +127,7 @@ $(document).on('ready', function() {
 
   start.on('click', function(event) {
     console.log("RESET GAME")
-    var game = new TicTacToe("p1", "p2")
+    window.location.reload()
   })
 
 })
