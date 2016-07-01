@@ -14,3 +14,11 @@ html {
 table {
   margin: auto;
 }
+
+.player1 {
+  background-color: cyan;
+}
+
+.player2 {
+  background-color: magenta;
+}
