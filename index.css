@@ -16,10 +16,11 @@ html {
   background-size: cover;
 }
 
-.start {
-  margin: auto;
-  /*width: 6rem;*/
-  /*height: 2rem;*/
+.reset {
+  margin-top: 2rem;
+  margin-left: 35rem;
+  width: 6rem;
+  height: 2rem;
   background-color: yellow;
 }
 

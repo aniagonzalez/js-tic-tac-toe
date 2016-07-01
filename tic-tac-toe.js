@@ -96,7 +96,7 @@ $(document).on('ready', function() {
   var game = new TicTacToe("p1", "p2")
 
   var buttons = $(".tic-tac-toe button")
-  var start = $(".start")
+  var reset = $(".reset")
 
   buttons.on('click', function(event) {
     // console.log($(this))
@@ -125,7 +125,7 @@ $(document).on('ready', function() {
 
   })
 
-  start.on('click', function(event) {
+  reset.on('click', function(event) {
     console.log("RESET GAME")
     window.location.reload()
   })
